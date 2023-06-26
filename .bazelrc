@@ -1,2 +1,4 @@
 import %workspace%/envoy/.bazelrc
 build --platform_mappings=envoy/bazel/platform_mappings
+
+build:macos --override_repository envoy_build_config=envoy/ci/osx-build-config
